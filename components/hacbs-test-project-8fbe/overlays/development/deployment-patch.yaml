@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-8fbe
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/integration1-izba-tenant/integ-app-hvpb/hacbs-test-project-8fbe@sha256:e57cd5ac56f3cf89a6e315d0d1fe2d54a3afcdeec17abb1b85716f7ea478171c
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
